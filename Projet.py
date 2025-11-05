@@ -7,6 +7,8 @@ import plotly.express as px
 import plotly.graph_objects as go
 import statsmodels.api as sm
 
+# from scipy._lib._util import _lazywhere 
+
 from pathlib import Path
 
 import warnings
@@ -363,9 +365,6 @@ if choice == choices[3] :
     st.markdown("###### Le temps d'affichage est un peu long, merci de patienter.")
 			  
     plt.figure(figsize=[100, 100])
-
-    # fig = px.scatter(df_orig, x="Longueur", y="Vitesse maximale autorisée", color="Aménagement", trendline="ols",
-    #            title="Nuage de points entre la vitesse maximale autorisée et la longueur (avec régression des moindres carrés)")
 				
     fig = px.scatter(df_orig, x='Longueur', y='Vitesse maximale autorisée', trendline="ols", title="Nuage de points avec Ligne de Tendance Linéaire")
 	
@@ -386,4 +385,3 @@ if choice == choices[3] :
 	**Par contre, avec le dataset 1, nous avons appris à utiliser les librairies Python Geopandas et Folium pour réaliser la cartographie.** 
     """
 	    )
-
