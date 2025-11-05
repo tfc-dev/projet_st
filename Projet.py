@@ -360,7 +360,7 @@ if choice == choices[3] :
 		
         df_orig['Longueur'] = df_orig['Longueur'].round(0).astype(int)
 
-    st.markdown("###### Le temps d'affichage est un peu long, merci de patienter.")
+    # st.markdown("###### Le temps d'affichage est un peu long, merci de patienter.")
 			  
     plt.figure(figsize=[100, 100])
 				
@@ -383,4 +383,5 @@ if choice == choices[3] :
 	**Par contre, avec le dataset 1, nous avons appris à utiliser les librairies Python Geopandas et Folium pour réaliser la cartographie.** 
     """
 	    )
+
 
