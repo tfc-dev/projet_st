@@ -10,4 +10,3 @@ pandas_geojson==2.2.1
 Shapely==2.1.2
 streamlit_folium==0.25.3
 statsmodels==0.14.4
-spicy==0.16.0

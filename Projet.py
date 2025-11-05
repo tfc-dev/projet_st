@@ -5,7 +5,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.express as px
 import plotly.graph_objects as go
-import statsmodels.api as sm
+
+# import statsmodels.api as sm
+
 from pathlib import Path
 
 import warnings
@@ -382,6 +384,3 @@ if choice == choices[3] :
 	**Par contre, avec le dataset 1, nous avons appris à utiliser les librairies Python Geopandas et Folium pour réaliser la cartographie.** 
     """
 	    )
-
-
-
