@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.express as px
 import plotly.graph_objects as go
+import statsmodels.api as sm
 
 from pathlib import Path
 
@@ -104,7 +105,7 @@ if choice == choices[1] :
     df = pd.read_csv("amenagements-cyclables.csv" ,sep=';')
 	
     if 'df_orig' not in st.session_state:
-	    st.session_state['df_orig'] = df
+        st.session_state['df_orig'] = df
 	
     ## Traiter et nettoyage des données
     df['Date export'] = pd.to_datetime(df['Date export'], errors='coerce', utc=True)
