@@ -22,6 +22,8 @@ st.write("**Pour tracer le polygone de Paris 12, on a téléchargé le fichier G
 
 geodf_Paris12 = gpd.read_file('Geo_Paris12.geojson', driver='GEOJSON')  # 'Geo_Paris12.geojson' est fourni par Open Data de la Ville de Paris
 
+geodf_Paris12['geometry'] = geodf_Paris12['geometry'].apply(lambda x: x)
+
 st.write("**Voici le contenu de ce fichier**")
 st.dataframe(geodf_Paris12.head())
 
@@ -91,7 +93,7 @@ txt = """
 
 **Il faut utiliser la librairie scipy spatial et la méthode ConvexHull. Le codage est plus complexe.**
 
-**Pour des raisons du manque de temps, nous n'avons pas pu le faire.**
+**Par manque de temps, nous n'avons pas pu le faire.**
 """
 
 st.markdown(txt)
