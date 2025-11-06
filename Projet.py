@@ -374,12 +374,19 @@ if choice == choices[3] :
     """	
     )
 	
-    rep = st.checkbox("CONCLUSION")
+   # rep = st.checkbox("CONCLUSION")
 	
-    if rep:
-        st.markdown("""
+   # if rep:
+    
+
+        
+    st.write("                            ")
+ 
+    st.write("##### CONCLUSION")
+
+    st.markdown("""
 	###### 	Le jeu de données nous apprend par la visualisation de l'évolution de l'aménagement de pistes cyclables de la Ville de Paris.
 	**Nous n'avons pas pu modéliser le problème de l'objectif qui est la sécurité dû au manque de données complémentaires.**
 	**Par contre, avec le dataset 1, nous avons appris à utiliser les librairies Python Geopandas et Folium pour réaliser la cartographie.** 
     """
-	    )
+    )
