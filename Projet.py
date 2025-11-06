@@ -143,7 +143,7 @@ Position aménagement**
 		
         Texte = """
 ##### Les types d'aménagement qui nous intéressent sont :
-* **piste cyclable (séparée physiquement de la chaussée par un terre plein non franchissable**
+* **piste cyclable (séparée physiquement de la chaussée par un terre plein non franchissable)**
 * **bande cyclable (marquage au sol)**
 * **voie piétonne**
 * **couloir bus ouvert aux vélos**
