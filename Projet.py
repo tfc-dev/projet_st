@@ -367,16 +367,16 @@ if choice == choices[3] :
     fig = px.scatter(df_orig, x='Longueur', y='Vitesse maximale autorisée', trendline="ols", title="Nuage de points avec Ligne de Tendance Linéaire")
 	
     st.plotly_chart(fig, use_container_width=True)
-	
-    rep = st.checkbox("CONSTAT ET CONCLUSION")
-	
-    if rep:
-        st.markdown(
+    
+    st.markdown(
 	"""
 	###### D'après le graphique, il n'y a pas de relation linéaire entre les deux variables.
     """	
     )
-		
+	
+    rep = st.checkbox("CONCLUSION")
+	
+    if rep:
         st.markdown("""
 	###### 	Le jeu de données nous apprend par la visualisation de l'évolution de l'aménagement de pistes cyclables de la Ville de Paris.
 	**Nous n'avons pas pu modéliser le problème de l'objectif qui est la sécurité dû au manque de données complémentaires.**
